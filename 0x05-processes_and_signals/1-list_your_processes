@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Lists the PIDs of running processes
 
-ps -e -o pid=
+ps -e | awk '{print $1}' | tail -n +2
