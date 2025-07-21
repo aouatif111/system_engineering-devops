@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Lists the PIDs of running processes
+# List running processes by PID using PowerShell
 
-ps -e | awk '{print $1}' | tail -n +2
+powershell.exe -Command "Get-Process | Select-Object -ExpandProperty Id"
