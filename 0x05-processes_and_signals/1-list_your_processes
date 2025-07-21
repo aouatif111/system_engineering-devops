@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Lists currently running processes
+# Lists the PIDs of running processes
 
-ps
+ps -e -o pid=
