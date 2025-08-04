@@ -1,8 +1,2 @@
-#!/usr/bin/env bash
-# List files and print only part after first dash
-
-for file in *; do
-  name="${file#*-}"
-  echo "$name"
-done
-
+#!/bin/bash
+for file in *-*; do echo "${file#*-}"; done
